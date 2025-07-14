@@ -43,7 +43,7 @@ const Home = () => {
                   <tr key={index} className="border-b hover:bg-gray-50">
                     <td className="px-4 py-2">{visitor.ip || 'N/A'}</td>
                     <td className="px-4 py-2">{visitor.browser || 'N/A'}</td>
-                    <td className="px-4 py-2">{visitor.platform || 'N/A'}</td>
+                    <td className="px-4 py-2">{visitor.platform }</td>
                     <td className="px-4 py-2">
                       {new Date(visitor.createdAt).toLocaleString()}
                     </td>
