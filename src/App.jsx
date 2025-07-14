@@ -9,15 +9,15 @@ import Footer from './Components/Footer';
 const App = () => {
   return (
 <>
-<Navigation/>
     <BrowserRouter>
+<Navigation/>
 <Routes>
   <Route path='/' excat element={<Home/>}/>
   <Route path='/Dashboard' excat element={<Dashboard/>}/>
   <Route path='/Visitor' excat element={<Visitor/>}/>
 </Routes>
-    </BrowserRouter>
     <Footer />
+    </BrowserRouter>
 </>
   )
 }
