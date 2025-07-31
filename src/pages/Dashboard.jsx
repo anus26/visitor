@@ -21,12 +21,19 @@ const Dashboard = () => {
 
   return (
     <>
-    <div className='flex    items-center w-96 m-16 '>
+  <div className='  '>
 
       <BrowserPieChart visits={chatData} field="browser" />
+    </div>
+    <div>
+
             <BrowserPieChart visits={chatData} field="ip" />
+    </div>
+    <div>
+
                   <BrowserPieChart visits={chatData} field="device" /> 
     </div>
+
     </>
   );
 };

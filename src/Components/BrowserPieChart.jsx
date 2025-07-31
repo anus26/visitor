@@ -18,10 +18,12 @@ const BrowserPieChart = ({ visits, field }) => {
     chartInstanceRef.current = new Chart(chartRef.current, {
       type: 'pie',
       data: chartData,
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-      },
+  options: {
+  responsive: true,
+  maintainAspectRatio: false,
+
+}
+
     });
 
     return () => {
@@ -31,7 +33,10 @@ const BrowserPieChart = ({ visits, field }) => {
     };
   }, [visits, field]);
 
-  return <canvas ref={chartRef} className="!w-full !h-48  gap-5 "  />;
+  return <canvas ref={chartRef} className=" " />
+    // <div className="w-full sm:w-80 h-64 p-4 bg-white rounded-xl shadow-md">
+    // </div>
+  
 };
 
 export default BrowserPieChart;

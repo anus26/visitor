@@ -30,8 +30,8 @@ const Visitor = () => {
 </div>
    {Array.isArray(data)&&data?.map((visits, id) => (
  
-  <div key={id} className='border-2    gap-7 flex justify-between m-2   hover:border-gray-200 '>
-    <p className='ga-5 '>{visits.browser}</p>
+  <div key={id} className='border-2   gap-7  sm:gap-4 flex justify-between m-2   hover:border-gray-200 '>
+    <p className='ga-5 sm:gap-2 xs:gap-1 '>{visits.browser}</p>
 
     <p className='gap-5 '>{visits.device}</p>
     <p className='gap-5 '>{visits.ip}</p>
